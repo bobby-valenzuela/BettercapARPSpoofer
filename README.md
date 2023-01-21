@@ -1,4 +1,4 @@
-# ARPSppofer-w-bettercap
+# ARPSpoofer-w-bettercap
 
 ## Prerequisutes
 1. Make sure you have namp/netdiscover installed (could also use nmap for host scanning).
