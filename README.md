@@ -6,7 +6,7 @@
 
 ## Usage
 1. Find some hosts to spoof within your LAN.
-   **a. `bettercap -iface <interface>`
+   ..a. `bettercap -iface <interface>`
   b. `net.probe on`
   c. `net.show`
   d. Pick a client and exit bettercap.
