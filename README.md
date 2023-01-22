@@ -11,7 +11,7 @@
    3. `net.show`
    4. Pick a client and exit bettercap.
    5. __Note: Can also use netdiscover or nmap for host scanning.__
-2. Create/Edit your spoof caplet (spoof.caplet)
+2. Create/Edit your spoof caplet (spoof.cap)
    1. `set arp.spoof.fullplex true`  : Capture both incoming/outgoing traffic. 
    2. `set arp.spoof.targets <target ip/mac>` : Comma-separated list of IPs/MACs to spoof.
    3. `set net.sniff.local true` :  Sniff local (attackbox) traffic as well - needed for bypassing HTTPS.
