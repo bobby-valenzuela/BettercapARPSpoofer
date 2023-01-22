@@ -29,7 +29,7 @@
     `
 4. Start bettercap with customized caplet.
    1. `bettercap -iface <interface> -caplet <capletfile>`
-   2. Example: `bettercap -iface eth0 -caplet spoof.caplet`
+   2. Example: `bettercap -iface eth0 -caplet spoof.cap`
 5. Enable/Verify hstshijack caplet is enabled.
    1. `hstshijack/hstshijack`
    2. `caplets.show`
