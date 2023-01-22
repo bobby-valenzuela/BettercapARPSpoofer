@@ -1,6 +1,6 @@
 net.probe on
 net.recon on
-set arp.spoof.fullplex true
+set arp.spoof.fullduplex true
 set arp.spoof.targets <target ip/mac>
 arp.spoof on
 set net.sniff.local true
